@@ -50,8 +50,8 @@ contract Token {
     function burnTokens(uint32 _amount) external outOfDate{
         require(balances[msg.sender] >= _amount, "Not enough tokens");
 
-        balances[msg.sender] -= _amount;
-        totalSupply -= _amount;
+        balances[msg.sender] -= _amount * 1 ether;
+        totalSupply -= _amount * 1 ether;
 
         emit Transfer(msg.sender, address(0), _amount);
     }
