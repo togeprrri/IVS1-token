@@ -9,18 +9,18 @@ contract Token {
 
     uint256 public decimals = 18;
 
-    uint256 public totalSupply = 1 ether;
+    uint256 public totalSupply = 333 ether;
 
     address public owner;
 
-    uint32 public burningDate = uint32(block.timestamp + 1 hours);
+    uint256 public burningDate = block.timestamp + 2 minutes;
 
     mapping(address => uint256) balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     modifier outOfDate(){
-        require(block.timestamp >= burningDate);
+        require(block.timestamp >= burningDate, "Not out of date");
         _;
     }
 

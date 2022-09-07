@@ -1,3 +1,46 @@
+await token.totalSupply();
+await token.burnTokens(30);
+await token.totalSupply();
+await token.burnTokens(20);
+const token = await Token.deploy();
+const [owner, addr1, addr2] = await ethers.getSigners();
+const Token = await ethers.getContractFactory("Token");
+await token.burnTokens(1);
+await token.burnTokens(300);
+const token = await Token.deploy();
+const [owner, addr1, addr2] = await ethers.getSigners();
+const Token = await ethers.getContractFactory("Token");
+      await hardhatToken.deployed();
+      const hardhatToken = await Token.deploy();
+      const [owner, addr1, addr2] = await et  
+const Token = await ethers.getContractFactory("Token");
+npx hardhat compile
+await token.burnTokens(300);
+await burnTokens(300);
+block.timestamp();
+console.log(await token.burningDate())
+console.log(await token.balanceOf(owner.address));
+console.log(token.owner())
+token.owner().to
+token.owner()
+const token = await Token.deploy();
+const [owner, addr1, addr2] = await ethers.getSigners();
+const Token = await ethers.getContractFactory("Token");
+.clear
+hardhatToken.burningDate()
+hardhatToken.burnTokens(12)
+hardhatToken.totalSupply()
+hardhatToken.totalSupply
+hardhatToken.burn
+console.log(token.owner())
+token
+token.owner()
+      await hardhatToken.deployed();
+      const hardhatToken = await Token.deploy();
+      const [owner, addr1, addr2] = await ethers.getSigners();
+const Token = await ethers.getContractFactory("Token");
+token.balanceOf(0xE72418F04D87416AC71145B36452a8Afd2DeC083)
+console.log("Hello")
 config
 getSigner
 balanceOf(0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266)
